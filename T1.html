@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore the Beauty of Nature</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #1e1e2f;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00e5ff;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 12px 24px;
+            background-color: #00c853;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #009624;
+        }
+    </style>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <h1>The Wonders of Nature</h1>
+        <p>
+            Nature is one of the most magnificent gifts we have. Yet, it is increasingly under threat from climate change, deforestation, and pollution. Preserving our planet is not just an environmental concern, it's a responsibility we all share. Organizations like National Geographic, the World Wildlife Fund, and Earth.org work tirelessly to protect endangered species, educate communities, and conserve fragile ecosystems.
+        </p>
+
+       <a href="https://ibb.co/5hS9pjmd"><img src="https://i.ibb.co/k2wybDjp/66a02c57-cef3-4423-8931-0b4b396e806b.jpg" alt="66a02c57-cef3-4423-8931-0b4b396e806b" border="0"></a>
+
+        <div>
+            <a href="https://www.nationalgeographic.com" target="_blank">National Geographic</a>
+            <a href="https://www.wwf.org" target="_blank">World Wildlife Fund</a>
+            <a href="https://earth.org" target="_blank">Earth.org</a>
+        </div>
+
+        <button onclick="showMessage()">Click Me for a Surprise!</button>
+    </div>
+
+    <!-- JavaScript for Alert -->
+    <script>
+        function showMessage() {
+            alert("Thank you for appreciating nature!");
+        }
+    </script>
+
+    <!-- Particle.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "bounce"
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "repulse": {
+                        "distance": 100,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
+
